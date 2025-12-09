@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Galactic Greens — Elevate Your Universe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">Galactic Greens</div>
+      <nav class="nav">
+        <a href="#products">Products</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#order">Order</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-inner">
+      <h1 class="hero-title">Galactic Greens</h1>
+      <p class="hero-sub">Elevate Your Universe.</p>
+      <a href="#products" class="btn btn-primary">Shop the Cosmos</a>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products" class="section products-section">
+    <div class="container">
+      <h2 class="section-title">Product Categories</h2>
+
+      <div class="product-grid">
+
+        <!-- Accessories -->
+        <div class="product-card" data-price="0" data-name="Accessories - Ashtray/Tray">
+          <img src="assets/accessory1.jpg" alt="Accessories" />
+          <h3>Accessories (Ashtrays & Trays)</h3>
+          <p class="price">Custom</p>
+          <div class="card-actions">
+            <input type="number" min="0" value="0" class="qty" />
+            <button class="btn add-to-cart">Add</button>
+          </div>
+        </div>
+
+        <!-- Grinder -->
+        <div class="product-card" data-price="2000" data-name="Grinder">
+          <img src="assets/grinder.jpg" alt="Grinder" />
+          <h3>Grinder</h3>
+          <p class="price">KSh 2,000</p>
+          <div class="card-actions">
+            <input type="number" min="0" value="0" class="qty" />
+            <button class="btn add-to-cart">Add</button>
+          </div>
+        </div>
+
+        <!-- Bong -->
+        <div class="product-card" data-price="2000" data-name="Bong">
+          <img src="assets/bong.jpg" alt="Bong" />
+          <h3>Bong</h3>
+          <p class="price">KSh 2,000</p>
+          <div class="card-actions">
+            <input type="number" min="0" value="0" class="qty" />
+            <button class="btn add-to-cart">Add</button>
+          </div>
+        </div>
+
+        <!-- Edible: Cookies 2pc -->
+        <div class="product-card" data-price="350" data-name="Cookies (2pc)">
+          <img src="assets/cookies.jpg" alt="Cookies" />
+          <h3>Cookies — 2pc</h3>
+          <p class="price">KSh 350</p>
+          <div class="card-actions">
+            <input type="number" min="0" value="0" class="qty" />
+            <button class="btn add-to-cart">Add</button>
+          </div>
+        </div>
+
+        <!-- Kashata -->
+        <div class="product-card" data-price="150" data-name="Kashata">
+          <img src="assets/kashata.jpg" alt="Kashata" />
+          <h3>Kashata</h3>
+          <p class="price">KSh 150</p>
+          <div class="card-actions">
+            <input type="number" min="0" value="0" class="qty" />
+            <button class="btn add-to-cart">Add</button>
+          </div>
+        </div>
+
+        <!-- Mabuyu -->
+        <div class="product-card" data-price="150" data-name="Mabuyu">
+          <img src="assets/mabuyu.jpg" alt="Mabuyu" />
+          <h3>Mabuyu</h3>
+          <p class="price">KSh 150</p>
+          <div class="card-actions">
+            <input type="number" min="0" value="0" class="qty" />
+            <button class="btn add-to-cart">Add</button>
+          </div>
+        </div>
+
+        <!-- Pre-rolls foreign -->
+        <div class="product-card" data-price="150" data-name="Pre-roll - Foreign">
+          <img src="assets/preroll1.jpg" alt="Pre-roll foreign" />
+          <h3>Pre-roll (Foreign)</h3>
+          <p class="price">KSh 150</p>
+          <div class="card-actions">
+            <input type="number" min="0" value="0" class="qty" />
+            <button class="btn add-to-cart">Add</button>
+          </div>
+        </div>
+
+        <!-- Pre-rolls skunk -->
+        <div class="product-card" data-price="100" data-name="Pre-roll - Skunk">
+          <img src="assets/preroll2.jpg" alt="Pre-roll skunk" />
+          <h3>Pre-roll (Skunk)</h3>
+          <p class="price">KSh 100</p>
+          <div class="card-actions">
+            <input type="number" min="0" value="0" class="qty" />
+            <button class="btn add-to-cart">Add</button>
+          </div>
+        </div>
+
+      </div> <!-- product-grid -->
+    </div>
+  </section>
+
+  <!-- CART & ORDER -->
+  <section id="order" class="section cart-section">
+    <div class="container">
+      <h2 class="section-title">Your Cart & Order</h2>
+
+      <div class="cart-wrap">
+        <div class="cart-items" id="cartItems">
+          <p class="empty-cart">Cart is empty. Add items from Products.</p>
+        </div>
+
+        <div class="cart-summary">
+          <h3>Summary</h3>
+          <p>Total: <span id="cartTotal">KSh 0</span></p>
+
+          <form id="orderForm" class="order-form"
+                action="https://formspree.io/f/yourFormID"
+                method="POST">
+            <!-- Replace yourFormID above with your real Formspree form ID -->
+            <label>
+              Full name
+              <input type="text" name="Name" required />
+            </label>
+
+            <label>
+              Phone / WhatsApp
+              <input type="text" name="Phone" placeholder="+2547..." required />
+            </label>
+
+            <label class="hidden">
+              Selected products (auto-filled)
+              <textarea name="Selected_Products" id="selectedProducts" readonly></textarea>
+            </label>
+
+            <input type="hidden" name="Cart_Total" id="cartTotalInput" value="0">
+
+            <label>
+              Message (optional)
+              <textarea name="Message" placeholder="Delivery instructions or notes"></textarea>
+            </label>
+
+            <button type="submit" class="btn btn-primary submit-btn">Send Order</button>
+
+            <p class="form-note">Orders are sent via Formspree — you'll get an email when a customer submits.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section gallery-section">
+    <div class="container">
+      <h2 class="section-title">Gallery</h2>
+      <div class="gallery-grid">
+        <img src="assets/gallery1.jpg" alt="gallery 1" />
+        <img src="assets/gallery2.jpg" alt="gallery 2" />
+        <img src="assets/gallery3.jpg" alt="gallery 3" />
+        <img src="assets/gallery4.jpg" alt="gallery 4" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <h2 class="section-title">About Galactic Greens</h2>
+      <p class="about-text">
+        Born where stardust meets chill vibes — Galactic Greens crafts curated cannabis experiences
+        and premium accessories. From glow-ready ashtrays to hand-rolled pre-rolls, every product
+        is designed to help you elevate your universe.
+      </p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Galactic Greens — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
